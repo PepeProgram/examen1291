@@ -1,0 +1,20 @@
+1.- Crear archivo requirements.txt con la versión de los módulos externos usados
+    pip freeze | grep pygame > requirements.txt
+
+2.- Crear archivo setup.py. Las líneas utilizadas son:
+
+from setuptools import setup
+
+setup(
+    name='Juego Pygame',
+    version='1.0.0',
+    url='www.unacualquiera.com',
+    license='SOLO PARA MI',
+    author='yO',
+    author_email='elmio@pepe.es',
+    description='Ejercicio examen',
+    install_requires=open('requirements.txt').readlines()
+)
+
+3.- Crear el archivo de instalación con
+    python setup.py sdist

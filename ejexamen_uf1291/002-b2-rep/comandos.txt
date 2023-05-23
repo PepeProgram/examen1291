@@ -1,0 +1,9 @@
+1.- Crear el ejecutable:
+
+    pyinstaller -F 001-rep.py -w --collect-all customtkinter
+
+    NOTAS: La opción "-F" es para que empaquete todo en un archivo. "-w" para que se ejecute en ventana y,
+    lo más importante, "--collect-all" customtkinter para importar customtkinter pues, al no ser un paquete
+    estándar necesito indicarle que lo recopile.
+
+2.- Copiar carpetas con imagenes y mp3 al directorio del ejecutable
